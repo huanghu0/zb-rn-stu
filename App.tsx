@@ -6,54 +6,35 @@
  */
 
 import React from 'react';
-import type {PropsWithChildren} from 'react';
 import {
   SafeAreaView,
-  ScrollView,
   StatusBar,
   StyleSheet,
-  Text,
   useColorScheme,
-  View,
+  View
 } from 'react-native';
+import ViewDemo from './src/components/FunctionComponents/ViewDemo';
+import TextDemo from './src/components/FunctionComponents/TextDemo';
+import ImageDemo from './src/components/FunctionComponents/ImageDemo';
+import ImageBackgroundDemo from './src/components/FunctionComponents/ImageBackgroundDemo';
+import TextInputDemo from './src/components/FunctionComponents/TextInputDemo';
+import TouchableOpacityDemo from './src/components/FunctionComponents/TouchableOpacityDemo';
+import TouchableHighlightDemo from './src/components/FunctionComponents/TouchableHighlightDemo';
+import TouchableWithoutFeedbackDemo from './src/components/FunctionComponents/TouchableWithoutFeedbackDemo';
+import ButtonDemo from './src/components/FunctionComponents/ButtonDemo';
+import PressableDemo from './src/components/FunctionComponents/PressableDemo';
+import ScrollViewDemo from './src/components/FunctionComponents/ScrollViewDemo';
+import FlatListDemo from './src/components/FunctionComponents/FlatListDemo';
+import SectionListDemo from './src/components/FunctionComponents/SectionListDemo';
+import ModalDemo from './src/components/FunctionComponents/ModalDemo';
+import SwitchDemo from './src/components/FunctionComponents/SwitchDemo';
+import PersonalInfo from './src/components/FunctionComponents/PersonalInfo';
+
 
 import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
+  Colors
 } from 'react-native/Libraries/NewAppScreen';
 
-type SectionProps = PropsWithChildren<{
-  title: string;
-}>;
-
-function Section({children, title}: SectionProps): JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-  return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
-  );
-}
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -68,51 +49,37 @@ function App(): JSX.Element {
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
+      <View style={styles.container}>
+        {/* <ViewDemo></ViewDemo> */}
+        {/* <TextDemo></TextDemo> */}
+        {/* <ImageDemo></ImageDemo> */}
+        {/* <ImageBackgroundDemo></ImageBackgroundDemo> */}
+        {/* <TextInputDemo></TextInputDemo> */}
+        {/* <TouchableOpacityDemo></TouchableOpacityDemo>   */}
+        {/* <TouchableHighlightDemo></TouchableHighlightDemo> */}
+        {/* <TouchableWithoutFeedbackDemo></TouchableWithoutFeedbackDemo> */}
+        {/* <ButtonDemo></ButtonDemo> */}
+        {/* <PressableDemo></PressableDemo> */}
+        {/* <ScrollViewDemo></ScrollViewDemo> */}
+        {/* <FlatListDemo></FlatListDemo> */}
+        {/* <SectionListDemo></SectionListDemo> */}
+        {/* <ModalDemo></ModalDemo> */}
+        {/* <SwitchDemo></SwitchDemo> */}
+        <PersonalInfo></PersonalInfo>
+      </View>
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
+  container:{
+    // flex:1,
+    width: '100%',
+    height: '100%',
+    flexDirection: 'column',
+    alignItems: 'center',
+    backgroundColor: 'white',    
+  }
 });
 
 export default App;

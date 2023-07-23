@@ -29,6 +29,7 @@ import SectionListDemo from './src/components/FunctionComponents/SectionListDemo
 import ModalDemo from './src/components/FunctionComponents/ModalDemo';
 import SwitchDemo from './src/components/FunctionComponents/SwitchDemo';
 import PersonalInfo from './src/components/FunctionComponents/PersonalInfo';
+import TestApi from './src/components/FunctionComponents/TestApi';
 
 
 import {
@@ -65,7 +66,8 @@ function App(): JSX.Element {
         {/* <SectionListDemo></SectionListDemo> */}
         {/* <ModalDemo></ModalDemo> */}
         {/* <SwitchDemo></SwitchDemo> */}
-        <PersonalInfo></PersonalInfo>
+        {/* <PersonalInfo></PersonalInfo> */}
+        <TestApi></TestApi>
       </View>
     </SafeAreaView>
   );

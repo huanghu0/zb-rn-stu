@@ -30,8 +30,17 @@ import ModalDemo from './src/components/FunctionComponents/ModalDemo';
 import SwitchDemo from './src/components/FunctionComponents/SwitchDemo';
 import PersonalInfo from './src/components/FunctionComponents/PersonalInfo';
 import TestApi from './src/components/FunctionComponents/TestApi';
-
-
+import Anim from './src/anim/Anim';
+import Anim2 from './src/anim/Anim2';
+import Anim3 from './src/anim/Anim3';
+import Anim4 from './src/anim/Anim4';
+import Anim5 from './src/anim/Anim5';
+import Anim6 from './src/anim/Anim6';
+import Anim7 from './src/anim/Anim7';
+import FollowScroll from './src/anim/FollowScroll';
+import Anim8 from './src/anim/Anim8';
+import Anim9 from './src/anim/Anim9';
+import AnimShow from './src/anim/AnimShow';
 import {
   Colors
 } from 'react-native/Libraries/NewAppScreen';
@@ -67,7 +76,17 @@ function App(): JSX.Element {
         {/* <ModalDemo></ModalDemo> */}
         {/* <SwitchDemo></SwitchDemo> */}
         {/* <PersonalInfo></PersonalInfo> */}
-        <TestApi></TestApi>
+        {/* <TestApi></TestApi> */}
+        {/* <Anim></Anim> */}
+        {/* <Anim2></Anim2> */}
+        {/* <Anim3></Anim3> */}
+        {/* <Anim4></Anim4> */}
+        {/* <Anim6></Anim6> */}
+        {/* <Anim7></Anim7> */}
+        {/* <FollowScroll></FollowScroll> */}
+        {/* <Anim8></Anim8> */}
+        {/* <Anim9></Anim9> */}
+        <AnimShow></AnimShow>
       </View>
     </SafeAreaView>
   );

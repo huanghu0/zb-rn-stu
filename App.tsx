@@ -41,65 +41,76 @@ import FollowScroll from './src/anim/FollowScroll';
 import Anim8 from './src/anim/Anim8';
 import Anim9 from './src/anim/Anim9';
 import AnimShow from './src/anim/AnimShow';
+import AccountHome from './src/accountManage/modules/Home'
 import {
   Colors
 } from 'react-native/Libraries/NewAppScreen';
 
 
 function App(): JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
+  // const isDarkMode = useColorScheme() === 'dark';
 
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
+  // const backgroundStyle = {
+  //   backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
+  // };
 
   return (
-    <SafeAreaView style={backgroundStyle}>
+    <SafeAreaView 
+      style={styles.root}
+    >
       <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
+        // barStyle={isDarkMode ? 'light-content' : 'dark-content'}
+        // backgroundColor={backgroundStyle.backgroundColor}
+        barStyle={'dark-content'}
+        backgroundColor={'white'}
       />
-      <View style={styles.container}>
-        {/* <ViewDemo></ViewDemo> */}
-        {/* <TextDemo></TextDemo> */}
-        {/* <ImageDemo></ImageDemo> */}
-        {/* <ImageBackgroundDemo></ImageBackgroundDemo> */}
-        {/* <TextInputDemo></TextInputDemo> */}
-        {/* <TouchableOpacityDemo></TouchableOpacityDemo>   */}
-        {/* <TouchableHighlightDemo></TouchableHighlightDemo> */}
-        {/* <TouchableWithoutFeedbackDemo></TouchableWithoutFeedbackDemo> */}
-        {/* <ButtonDemo></ButtonDemo> */}
-        {/* <PressableDemo></PressableDemo> */}
-        {/* <ScrollViewDemo></ScrollViewDemo> */}
-        {/* <FlatListDemo></FlatListDemo> */}
-        {/* <SectionListDemo></SectionListDemo> */}
-        {/* <ModalDemo></ModalDemo> */}
-        {/* <SwitchDemo></SwitchDemo> */}
-        {/* <PersonalInfo></PersonalInfo> */}
-        {/* <TestApi></TestApi> */}
-        {/* <Anim></Anim> */}
-        {/* <Anim2></Anim2> */}
-        {/* <Anim3></Anim3> */}
-        {/* <Anim4></Anim4> */}
-        {/* <Anim6></Anim6> */}
-        {/* <Anim7></Anim7> */}
-        {/* <FollowScroll></FollowScroll> */}
-        {/* <Anim8></Anim8> */}
-        {/* <Anim9></Anim9> */}
+      {/* <View style={styles.container}>
+        <ViewDemo></ViewDemo>
+        <TextDemo></TextDemo>
+        <ImageDemo></ImageDemo>
+        <ImageBackgroundDemo></ImageBackgroundDemo>
+        <TextInputDemo></TextInputDemo>
+        <TouchableOpacityDemo></TouchableOpacityDemo>  
+        <TouchableHighlightDemo></TouchableHighlightDemo>
+        <TouchableWithoutFeedbackDemo></TouchableWithoutFeedbackDemo>
+        <ButtonDemo></ButtonDemo>
+        <PressableDemo></PressableDemo>
+        <ScrollViewDemo></ScrollViewDemo>
+        <FlatListDemo></FlatListDemo>
+        <SectionListDemo></SectionListDemo>
+        <ModalDemo></ModalDemo>
+        <SwitchDemo></SwitchDemo>
+        <PersonalInfo></PersonalInfo>
+        <TestApi></TestApi>
+        <Anim></Anim>
+        <Anim2></Anim2>
+        <Anim3></Anim3>
+        <Anim4></Anim4>
+        <Anim6></Anim6>
+        <Anim7></Anim7>
+        <FollowScroll></FollowScroll>
+        <Anim8></Anim8>
+        <Anim9></Anim9>
         <AnimShow></AnimShow>
-      </View>
+      </View> */}
+      <AccountHome></AccountHome>
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  container:{
-    // flex:1,
-    width: '100%',
-    height: '100%',
-    flexDirection: 'column',
-    alignItems: 'center',
-    backgroundColor: 'white',    
+  // container:{
+  //   // flex:1,
+  //   width: '100%',
+  //   height: '100%',
+  //   flexDirection: 'column',
+  //   alignItems: 'center',
+  //   backgroundColor: 'white',    
+  // }
+  root:{
+    width:'100%',
+    height:'100%',
+    backgroundColor:'#f5f5f5'
   }
 });
 

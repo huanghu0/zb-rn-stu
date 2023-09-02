@@ -43,6 +43,7 @@ import Anim9 from './src/anim/Anim9';
 import AnimShow from './src/anim/AnimShow';
 import AccountHome from './src/accountManage/modules/Home'
 import TsDemo from './src/ts/TsDemo';
+import RootView from './src/context/RootView';
 import {
   Colors
 } from 'react-native/Libraries/NewAppScreen';
@@ -96,7 +97,8 @@ function App(): JSX.Element {
       </View> */}
       {/* <AccountHome></AccountHome> */}
       <View>
-        <TsDemo></TsDemo>
+        {/* <TsDemo></TsDemo> */}
+        <RootView></RootView>
       </View>
       
     </SafeAreaView>

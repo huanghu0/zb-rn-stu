@@ -45,6 +45,7 @@ import AccountHome from './src/accountManage/modules/Home'
 import TsDemo from './src/ts/TsDemo';
 import RootView from './src/context/RootView';
 import InfoView from './src/hoc/InfoView';
+import MemoPage from './src/memo/MemoPage';
 import {
   Colors
 } from 'react-native/Libraries/NewAppScreen';
@@ -100,7 +101,8 @@ function App(): JSX.Element {
       <View>
         {/* <TsDemo></TsDemo> */}
         {/* <RootView></RootView> */}
-        <InfoView></InfoView>
+        {/* <InfoView></InfoView> */}
+        <MemoPage></MemoPage>
       </View>
       
     </SafeAreaView>

@@ -47,6 +47,7 @@ import RootView from './src/context/RootView';
 import InfoView from './src/hoc/InfoView';
 import MemoPage from './src/memo/MemoPage';
 import RefDemo from './src/ref/RefDemo';
+import NativePage from './src/native/NativePage';
 import {
   Colors
 } from 'react-native/Libraries/NewAppScreen';
@@ -104,7 +105,8 @@ function App(): JSX.Element {
         {/* <RootView></RootView> */}
         {/* <InfoView></InfoView> */}
         {/* <MemoPage></MemoPage> */}
-        <RefDemo></RefDemo>
+        {/* <RefDemo></RefDemo> */}
+        <NativePage></NativePage>
       </View>
       
     </SafeAreaView>
